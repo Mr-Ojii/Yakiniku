@@ -126,6 +126,8 @@ function draw() {
                             SP -= 10;
                             score[3]++;
                         }
+                        if(SP < 0)
+                            SP = 0;
                     }
                 }
             }
