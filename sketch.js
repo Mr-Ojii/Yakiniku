@@ -135,7 +135,7 @@ function draw() {
 
             if(countdown <= 0) {
                 scene = "finish";
-                countdown = 30 * 1;
+                countdown = 1 * 30;
             }
             break;
         case "finish":
