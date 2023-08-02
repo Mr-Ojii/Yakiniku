@@ -134,6 +134,17 @@ function draw() {
             }
 
             if(countdown <= 0) {
+                scene = "finish";
+                countdown = 30 * 1;
+            }
+            break;
+        case "finish":
+            countdown--;
+            textSize(100);
+            fill(255);
+            textAlign(CENTER, CENTER);
+            text("Finish!", 200, 200);
+            if(countdown <= 0) {
                 scene = "result";
             }
             break;
