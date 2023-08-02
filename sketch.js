@@ -1,4 +1,4 @@
-let scene = "result";
+let scene = "title";
 let SP = 0;
 let countdown = 3 * 30;
 let list = [
