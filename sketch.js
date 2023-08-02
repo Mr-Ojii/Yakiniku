@@ -1,5 +1,3 @@
-/* CC0 */
-
 let scene = "result";
 let SP = 0;
 let countdown = 3 * 30;
