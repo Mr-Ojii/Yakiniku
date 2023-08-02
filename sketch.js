@@ -34,7 +34,7 @@ function draw() {
             fill(255);
             textSize(40);
             text("Game Start!", 75, 265);
-            if (mouseIsPressed) {
+            if (mouseIsPressed && !beforeMouse) {
                 if (mouseX >= 50 && mouseX <= 350 && mouseY >= 200 && mouseY <= 300) {
                     scene = "countdown";
                     countdown = 3 * 30;
@@ -131,7 +131,6 @@ function draw() {
                     }
                 }
             }
-            beforeMouse = mouseIsPressed;
 
             if(countdown <= 0) {
                 scene = "result";
@@ -159,8 +158,9 @@ function draw() {
             text("炭: " + String(score[2]).padStart(3, '0'), 50, y);
             y += 50;
             text("Click to return to title.", 50, y);
-            if(mouseIsPressed)
+            if(mouseIsPressed && !beforeMouse)
                 scene = "title";
             break;
     }
+    beforeMouse = mouseIsPressed;
 }
