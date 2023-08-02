@@ -167,7 +167,7 @@ function draw() {
             y += 20;
             text("金: " + String(score[2]).padStart(3, '0'), 50, y);
             y += 20;
-            text("炭: " + String(score[2]).padStart(3, '0'), 50, y);
+            text("炭: " + String(score[3]).padStart(3, '0'), 50, y);
             y += 50;
             text("Click to return to title.", 50, y);
             if(mouseIsPressed && !beforeMouse)
