@@ -64,6 +64,7 @@ function draw() {
                 score = [
                     0,0,0,0
                 ];
+                SP = 0;
             }
             break;
         case "game":
